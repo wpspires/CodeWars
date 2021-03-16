@@ -3,6 +3,8 @@ def remov_nb(n):
     results = []
 
     total = sum(range(n+1))
+    # After comparing answers, n(n+1)/2 would have been better here
+
     for a in range(1, n+1):
         b = (total - a)/ (a+1)
         if b % 1 == 0 and b <= n:
